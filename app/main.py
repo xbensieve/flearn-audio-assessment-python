@@ -6,7 +6,7 @@ from utils import levenshtein, phonemize_text, calculate_accuracy, normalize_to_
 
 app = FastAPI()
 
-MFA_URL = "http://mfa-service:5000/align"
+MFA_URL = "https://flearn-audio-assessment-python.onrender.com/align"
 IPA_PHONEMES = [
     "tʃ", "dʒ", "uː", "iː", "eɪ", "aɪ", "oʊ", "aʊ", "ɔɪ",   
     "ɑː", "ɜː", "ɔː", "ʊə", "ɪə", "eə",
