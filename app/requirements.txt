@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+requests
+phonemizer
+praatio
+python-multipart
+python-Levenshtein
+pypinyin
+pyopenjtalk

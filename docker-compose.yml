@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  fastapi-app:
+    build: ./app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./shared:/shared
+    depends_on:
+      - mfa-service
+
+  mfa-service:
+    build: ./mfa
+    volumes:
+      - ./shared:/shared
+    ports:
+      - "5000:5000"
